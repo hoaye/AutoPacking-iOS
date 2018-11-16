@@ -1,0 +1,24 @@
+PODS:
+  - Bugly (2.5.0)
+  - ElegantTableView (0.0.3)
+  - YJBannerView (2.4.0)
+
+DEPENDENCIES:
+  - Bugly
+  - ElegantTableView
+  - YJBannerView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Bugly
+    - ElegantTableView
+    - YJBannerView
+
+SPEC CHECKSUMS:
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
+  ElegantTableView: 95e37428e31235a9851acdc6fd0cde24231e9737
+  YJBannerView: 0c81b7bda592cd23b10ceae8f53c514dcd77e4c6
+
+PODFILE CHECKSUM: 45f445fe1a82226ca80c9d83d0972e129730d247
+
+COCOAPODS: 1.5.3

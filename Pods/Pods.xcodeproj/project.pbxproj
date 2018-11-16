@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0455DBE57A7663740530BEAD7C23929A /* UIView+YJBannerViewExt.h in Headers */ = {isa = PBXBuildFile; fileRef = C79656A980B51FE106779837E851CC82 /* UIView+YJBannerViewExt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		08B2C510F740F1A9C7D82830D340DAA6 /* Pods-AutoPackingDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA746F5419719D7D7AD83263B34739D /* Pods-AutoPackingDemo-dummy.m */; };
+		0D1FF6369ED54AE0E43F3AB54B1B3A7B /* YJAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = E11755AF185659FB1C5278B3FE40B41F /* YJAnimatedDotView.m */; };
+		152118CAAEBEB0361EB3CC32F2F8C234 /* YJBannerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 383195DD94ABD2BC133928D47A5DD560 /* YJBannerView-dummy.m */; };
+		1EEA78C96AEB2852EB9EBB0171CA6F18 /* ElegantTableViewGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 628DDE089F30526EFEE09746CF15A296 /* ElegantTableViewGenerator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2E3F2243507086772441A566655CC75C /* ElegantTableViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 759DC45545C5F0B91A5FF1E5CA9DC1BA /* ElegantTableViewGenerator.m */; };
+		319B04FD551E8C7412CA070091BBA7DC /* YJHollowPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E001C164B817FB00DB5F71C9EFED7637 /* YJHollowPageControl.m */; };
+		48ACF056C727973E4B816B2F6FE1414A /* YJAnimatedDotView.h in Headers */ = {isa = PBXBuildFile; fileRef = 79500606CBDFFFE5CD826AD4DB539A4D /* YJAnimatedDotView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		50C9E320036527EBF352A7389485248C /* YJAbstractDotView.h in Headers */ = {isa = PBXBuildFile; fileRef = 13FEF74A763E1FD2BC276F8B84C04AFD /* YJAbstractDotView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		648C6C4DFB580708EDA65DA2DDAAD4D6 /* YJBannerViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C430B84C642C83153014EE31B9E1F104 /* YJBannerViewCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7BC9FEFDC776E2423A5B424C79FA254F /* YJBannerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 180ED3CBB0E009D29A5EEF067317331A /* YJBannerViewCell.m */; };
+		8A3039F6749152DC3E72388D69237D14 /* ElegantTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C3BF096512BD5CA9DFA28D5F81BBCE /* ElegantTableView-dummy.m */; };
+		A4E3C71647DDA0F553A285BEE387BC09 /* UIView+YJBannerViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E94B0853E8D29682D60D89C04CEB9A6 /* UIView+YJBannerViewExt.m */; };
+		AECA1BFF057E4D37E3932495DD768ECA /* YJBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8BA75AF1A51D1E0814FE070089A17F /* YJBannerView.m */; };
+		B955A4FF67B1704D2C663AE4A67ACFEF /* YJBannerViewFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 22153CD724BB5269D8F5A4FC723C9379 /* YJBannerViewFooter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B96C2B348B52778483ADEBB50DC86D29 /* YJHollowPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 41E82FF7A2732F9A5F9D217D6198706B /* YJHollowPageControl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BD751FB0B1234A432168CD329BBA5B88 /* YJBannerViewFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2AED993DB8804879D81B06A00114C8 /* YJBannerViewFooter.m */; };
+		CE0FFA0B7FF120BD468F3EEA025DF607 /* YJBannerViewCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0506CB433B9F4AE2A5F087C9F4EBCBB /* YJBannerViewCollectionView.m */; };
+		CF8627ACDFD92AD4DFDFA6B8BEC020A8 /* YJBannerViewCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A0282547C971E8311006608D63903AF /* YJBannerViewCollectionView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D09310045ED90061F9E94E78F79844F5 /* YJAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E21B1DC88C0A27B631CD3FA72D49DBB /* YJAbstractDotView.m */; };
+		F8359ABF244CF8BC9C96BE5F2AD29C9A /* YJBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0865D97003A7F6A03CA765D44B9F1D16 /* YJBannerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79D4938E9B4B59F65AE38050FAF662C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09683AFE1FA5F23104EA5299A795EA49;
+			remoteInfo = ElegantTableView;
+		};
+		982F95104F6B3D84188413DE3F11D028 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8672246CDAA1A7D561CE6ACA2CD18D2;
+			remoteInfo = YJBannerView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0865D97003A7F6A03CA765D44B9F1D16 /* YJBannerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJBannerView.h; path = YJBannerViewDemo/YJBannerView/YJBannerView.h; sourceTree = "<group>"; };
+		0950B6BE72D5ABCA28EC17C32027A406 /* Pods-AutoPackingDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AutoPackingDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		105B00528F6742765A349CADE9C426EB /* YJBannerView.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = YJBannerView.bundle; path = YJBannerViewDemo/YJBannerView/Resource/YJBannerView.bundle; sourceTree = "<group>"; };
+		13FEF74A763E1FD2BC276F8B84C04AFD /* YJAbstractDotView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJAbstractDotView.h; path = YJBannerViewDemo/YJBannerView/PageControls/YJHollowPageControl/YJAbstractDotView.h; sourceTree = "<group>"; };
+		180ED3CBB0E009D29A5EEF067317331A /* YJBannerViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJBannerViewCell.m; path = YJBannerViewDemo/YJBannerView/Views/YJBannerViewCell.m; sourceTree = "<group>"; };
+		1E8DF03B2C0E2EB1A64815BD588B508C /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bugly.framework; sourceTree = "<group>"; };
+		20EB2C761B1673C897DD2E373DAE524A /* Pods-AutoPackingDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AutoPackingDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		22153CD724BB5269D8F5A4FC723C9379 /* YJBannerViewFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJBannerViewFooter.h; path = YJBannerViewDemo/YJBannerView/Views/YJBannerViewFooter.h; sourceTree = "<group>"; };
+		27F214323DDB543E3D75256E9DDBD055 /* Pods-AutoPackingDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AutoPackingDemo-frameworks.sh"; sourceTree = "<group>"; };
+		2C3A0228A8CB237591ABCC019D416865 /* YJBannerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YJBannerView.xcconfig; sourceTree = "<group>"; };
+		383195DD94ABD2BC133928D47A5DD560 /* YJBannerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YJBannerView-dummy.m"; sourceTree = "<group>"; };
+		41E82FF7A2732F9A5F9D217D6198706B /* YJHollowPageControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJHollowPageControl.h; path = YJBannerViewDemo/YJBannerView/PageControls/YJHollowPageControl/YJHollowPageControl.h; sourceTree = "<group>"; };
+		4E2AED993DB8804879D81B06A00114C8 /* YJBannerViewFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJBannerViewFooter.m; path = YJBannerViewDemo/YJBannerView/Views/YJBannerViewFooter.m; sourceTree = "<group>"; };
+		4E94B0853E8D29682D60D89C04CEB9A6 /* UIView+YJBannerViewExt.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+YJBannerViewExt.m"; path = "YJBannerViewDemo/YJBannerView/Tools/UIView+YJBannerViewExt.m"; sourceTree = "<group>"; };
+		4F8BA75AF1A51D1E0814FE070089A17F /* YJBannerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJBannerView.m; path = YJBannerViewDemo/YJBannerView/YJBannerView.m; sourceTree = "<group>"; };
+		5EA746F5419719D7D7AD83263B34739D /* Pods-AutoPackingDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AutoPackingDemo-dummy.m"; sourceTree = "<group>"; };
+		61F7B8E857CCE610FAD9485EE3F5038A /* Pods-AutoPackingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoPackingDemo.release.xcconfig"; sourceTree = "<group>"; };
+		628DDE089F30526EFEE09746CF15A296 /* ElegantTableViewGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ElegantTableViewGenerator.h; path = ElegantTableView/ElegantTableViewGenerator.h; sourceTree = "<group>"; };
+		67F8F854BBB9415D9BEF15BFE946214A /* libPods-AutoPackingDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-AutoPackingDemo.a"; path = "libPods-AutoPackingDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		759DC45545C5F0B91A5FF1E5CA9DC1BA /* ElegantTableViewGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ElegantTableViewGenerator.m; path = ElegantTableView/ElegantTableViewGenerator.m; sourceTree = "<group>"; };
+		79500606CBDFFFE5CD826AD4DB539A4D /* YJAnimatedDotView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJAnimatedDotView.h; path = YJBannerViewDemo/YJBannerView/PageControls/YJHollowPageControl/YJAnimatedDotView.h; sourceTree = "<group>"; };
+		8AA10C875F56F9B6D4590DF35037DDFC /* Pods-AutoPackingDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AutoPackingDemo-resources.sh"; sourceTree = "<group>"; };
+		8E21B1DC88C0A27B631CD3FA72D49DBB /* YJAbstractDotView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJAbstractDotView.m; path = YJBannerViewDemo/YJBannerView/PageControls/YJHollowPageControl/YJAbstractDotView.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96D02AE6A1D4FA991CABDDFCD319730B /* Pods-AutoPackingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoPackingDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9A0282547C971E8311006608D63903AF /* YJBannerViewCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJBannerViewCollectionView.h; path = YJBannerViewDemo/YJBannerView/Views/YJBannerViewCollectionView.h; sourceTree = "<group>"; };
+		A0506CB433B9F4AE2A5F087C9F4EBCBB /* YJBannerViewCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJBannerViewCollectionView.m; path = YJBannerViewDemo/YJBannerView/Views/YJBannerViewCollectionView.m; sourceTree = "<group>"; };
+		B06E2289A9938ACDF8A1EE65586216F4 /* libElegantTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libElegantTableView.a; path = libElegantTableView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C430B84C642C83153014EE31B9E1F104 /* YJBannerViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJBannerViewCell.h; path = YJBannerViewDemo/YJBannerView/Views/YJBannerViewCell.h; sourceTree = "<group>"; };
+		C79656A980B51FE106779837E851CC82 /* UIView+YJBannerViewExt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+YJBannerViewExt.h"; path = "YJBannerViewDemo/YJBannerView/Tools/UIView+YJBannerViewExt.h"; sourceTree = "<group>"; };
+		D4C3BF096512BD5CA9DFA28D5F81BBCE /* ElegantTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ElegantTableView-dummy.m"; sourceTree = "<group>"; };
+		D52EBF1A1AF84D52D1038C666E798F7E /* libYJBannerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libYJBannerView.a; path = libYJBannerView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC032C89AED44FFA2CAB4D894EC96183 /* ElegantTableView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ElegantTableView.xcconfig; sourceTree = "<group>"; };
+		E001C164B817FB00DB5F71C9EFED7637 /* YJHollowPageControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJHollowPageControl.m; path = YJBannerViewDemo/YJBannerView/PageControls/YJHollowPageControl/YJHollowPageControl.m; sourceTree = "<group>"; };
+		E11755AF185659FB1C5278B3FE40B41F /* YJAnimatedDotView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJAnimatedDotView.m; path = YJBannerViewDemo/YJBannerView/PageControls/YJHollowPageControl/YJAnimatedDotView.m; sourceTree = "<group>"; };
+		F287B369DAC85D6FDB157FF7322B307F /* ElegantTableView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ElegantTableView-prefix.pch"; sourceTree = "<group>"; };
+		FA82BEF565E3EEF9FAFA3181DDE6706B /* YJBannerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YJBannerView-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C41B34FBC0DF202F306ACFEC3488059 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A78F4636465591CA9AC42100F6A6DC08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC02B7E9DA57044D52A60AC7D5CA09B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		143C32C73C48D49D1A1E001BCB5F1616 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B4FA66DE6118BD01EF4240560637F1D /* Bugly */,
+				C184A48CF5701E07C29F9777B9FD1073 /* ElegantTableView */,
+				4B4813CDACD7927D132859EF3308CA30 /* YJBannerView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1B4FA66DE6118BD01EF4240560637F1D /* Bugly */ = {
+			isa = PBXGroup;
+			children = (
+				DB80CE532CEEDE85A12E5553CFE5520E /* Frameworks */,
+			);
+			name = Bugly;
+			path = Bugly;
+			sourceTree = "<group>";
+		};
+		20BBAC74E26305ACA4772AD74F213E9E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC032C89AED44FFA2CAB4D894EC96183 /* ElegantTableView.xcconfig */,
+				D4C3BF096512BD5CA9DFA28D5F81BBCE /* ElegantTableView-dummy.m */,
+				F287B369DAC85D6FDB157FF7322B307F /* ElegantTableView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ElegantTableView";
+			sourceTree = "<group>";
+		};
+		4ADA1FB54259EECA696E9E4CDE647F2D /* Pods-AutoPackingDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0950B6BE72D5ABCA28EC17C32027A406 /* Pods-AutoPackingDemo-acknowledgements.markdown */,
+				20EB2C761B1673C897DD2E373DAE524A /* Pods-AutoPackingDemo-acknowledgements.plist */,
+				5EA746F5419719D7D7AD83263B34739D /* Pods-AutoPackingDemo-dummy.m */,
+				27F214323DDB543E3D75256E9DDBD055 /* Pods-AutoPackingDemo-frameworks.sh */,
+				8AA10C875F56F9B6D4590DF35037DDFC /* Pods-AutoPackingDemo-resources.sh */,
+				96D02AE6A1D4FA991CABDDFCD319730B /* Pods-AutoPackingDemo.debug.xcconfig */,
+				61F7B8E857CCE610FAD9485EE3F5038A /* Pods-AutoPackingDemo.release.xcconfig */,
+			);
+			name = "Pods-AutoPackingDemo";
+			path = "Target Support Files/Pods-AutoPackingDemo";
+			sourceTree = "<group>";
+		};
+		4B4813CDACD7927D132859EF3308CA30 /* YJBannerView */ = {
+			isa = PBXGroup;
+			children = (
+				C79656A980B51FE106779837E851CC82 /* UIView+YJBannerViewExt.h */,
+				4E94B0853E8D29682D60D89C04CEB9A6 /* UIView+YJBannerViewExt.m */,
+				13FEF74A763E1FD2BC276F8B84C04AFD /* YJAbstractDotView.h */,
+				8E21B1DC88C0A27B631CD3FA72D49DBB /* YJAbstractDotView.m */,
+				79500606CBDFFFE5CD826AD4DB539A4D /* YJAnimatedDotView.h */,
+				E11755AF185659FB1C5278B3FE40B41F /* YJAnimatedDotView.m */,
+				0865D97003A7F6A03CA765D44B9F1D16 /* YJBannerView.h */,
+				4F8BA75AF1A51D1E0814FE070089A17F /* YJBannerView.m */,
+				C430B84C642C83153014EE31B9E1F104 /* YJBannerViewCell.h */,
+				180ED3CBB0E009D29A5EEF067317331A /* YJBannerViewCell.m */,
+				9A0282547C971E8311006608D63903AF /* YJBannerViewCollectionView.h */,
+				A0506CB433B9F4AE2A5F087C9F4EBCBB /* YJBannerViewCollectionView.m */,
+				22153CD724BB5269D8F5A4FC723C9379 /* YJBannerViewFooter.h */,
+				4E2AED993DB8804879D81B06A00114C8 /* YJBannerViewFooter.m */,
+				41E82FF7A2732F9A5F9D217D6198706B /* YJHollowPageControl.h */,
+				E001C164B817FB00DB5F71C9EFED7637 /* YJHollowPageControl.m */,
+				6CC19E6A1F05F31BBA4195C74B18052D /* Resources */,
+				5A2D2A736DF5CB3D1C944DFB0B9D3E89 /* Support Files */,
+			);
+			name = YJBannerView;
+			path = YJBannerView;
+			sourceTree = "<group>";
+		};
+		54DF4AFEC1284693F592FA0A28680D6E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4ADA1FB54259EECA696E9E4CDE647F2D /* Pods-AutoPackingDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5A2D2A736DF5CB3D1C944DFB0B9D3E89 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C3A0228A8CB237591ABCC019D416865 /* YJBannerView.xcconfig */,
+				383195DD94ABD2BC133928D47A5DD560 /* YJBannerView-dummy.m */,
+				FA82BEF565E3EEF9FAFA3181DDE6706B /* YJBannerView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YJBannerView";
+			sourceTree = "<group>";
+		};
+		6CC19E6A1F05F31BBA4195C74B18052D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				105B00528F6742765A349CADE9C426EB /* YJBannerView.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				143C32C73C48D49D1A1E001BCB5F1616 /* Pods */,
+				9F90D75B4EC3216CC1CB45544CDBAD95 /* Products */,
+				54DF4AFEC1284693F592FA0A28680D6E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9F90D75B4EC3216CC1CB45544CDBAD95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B06E2289A9938ACDF8A1EE65586216F4 /* libElegantTableView.a */,
+				67F8F854BBB9415D9BEF15BFE946214A /* libPods-AutoPackingDemo.a */,
+				D52EBF1A1AF84D52D1038C666E798F7E /* libYJBannerView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C184A48CF5701E07C29F9777B9FD1073 /* ElegantTableView */ = {
+			isa = PBXGroup;
+			children = (
+				628DDE089F30526EFEE09746CF15A296 /* ElegantTableViewGenerator.h */,
+				759DC45545C5F0B91A5FF1E5CA9DC1BA /* ElegantTableViewGenerator.m */,
+				20BBAC74E26305ACA4772AD74F213E9E /* Support Files */,
+			);
+			name = ElegantTableView;
+			path = ElegantTableView;
+			sourceTree = "<group>";
+		};
+		DB80CE532CEEDE85A12E5553CFE5520E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E8DF03B2C0E2EB1A64815BD588B508C /* Bugly.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2C17137022BB6C8CF98392265A6EE965 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0455DBE57A7663740530BEAD7C23929A /* UIView+YJBannerViewExt.h in Headers */,
+				50C9E320036527EBF352A7389485248C /* YJAbstractDotView.h in Headers */,
+				48ACF056C727973E4B816B2F6FE1414A /* YJAnimatedDotView.h in Headers */,
+				F8359ABF244CF8BC9C96BE5F2AD29C9A /* YJBannerView.h in Headers */,
+				648C6C4DFB580708EDA65DA2DDAAD4D6 /* YJBannerViewCell.h in Headers */,
+				CF8627ACDFD92AD4DFDFA6B8BEC020A8 /* YJBannerViewCollectionView.h in Headers */,
+				B955A4FF67B1704D2C663AE4A67ACFEF /* YJBannerViewFooter.h in Headers */,
+				B96C2B348B52778483ADEBB50DC86D29 /* YJHollowPageControl.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F5E8F5FD307F0B979E4F2200F4BB868 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EEA78C96AEB2852EB9EBB0171CA6F18 /* ElegantTableViewGenerator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8910EDDB89A587725ACAC4F34285E294 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		09683AFE1FA5F23104EA5299A795EA49 /* ElegantTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B772969A21BC585347F0ED84EFDB1605 /* Build configuration list for PBXNativeTarget "ElegantTableView" */;
+			buildPhases = (
+				4F5E8F5FD307F0B979E4F2200F4BB868 /* Headers */,
+				52221836CC3CEE4B73B20EE5F52B25CF /* Sources */,
+				A78F4636465591CA9AC42100F6A6DC08 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ElegantTableView;
+			productName = ElegantTableView;
+			productReference = B06E2289A9938ACDF8A1EE65586216F4 /* libElegantTableView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A528E9747DC4113CCDB32DD86A3B22AB /* Pods-AutoPackingDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1530D466D9F267EEB20224EA2F01D4E /* Build configuration list for PBXNativeTarget "Pods-AutoPackingDemo" */;
+			buildPhases = (
+				8910EDDB89A587725ACAC4F34285E294 /* Headers */,
+				3882F88DFD149411A8DBF00861DB03C4 /* Sources */,
+				8C41B34FBC0DF202F306ACFEC3488059 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E820D90A54024CA64A85E62CEE8DE2C /* PBXTargetDependency */,
+				684AF897F30237DB480E55ED22516C7C /* PBXTargetDependency */,
+			);
+			name = "Pods-AutoPackingDemo";
+			productName = "Pods-AutoPackingDemo";
+			productReference = 67F8F854BBB9415D9BEF15BFE946214A /* libPods-AutoPackingDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E8672246CDAA1A7D561CE6ACA2CD18D2 /* YJBannerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5D1B90DE029522F17D0082D8B1C0054 /* Build configuration list for PBXNativeTarget "YJBannerView" */;
+			buildPhases = (
+				2C17137022BB6C8CF98392265A6EE965 /* Headers */,
+				335D83DACBD373AFC5002F8A7B650CB9 /* Sources */,
+				DC02B7E9DA57044D52A60AC7D5CA09B8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YJBannerView;
+			productName = YJBannerView;
+			productReference = D52EBF1A1AF84D52D1038C666E798F7E /* libYJBannerView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 9F90D75B4EC3216CC1CB45544CDBAD95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09683AFE1FA5F23104EA5299A795EA49 /* ElegantTableView */,
+				A528E9747DC4113CCDB32DD86A3B22AB /* Pods-AutoPackingDemo */,
+				E8672246CDAA1A7D561CE6ACA2CD18D2 /* YJBannerView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		335D83DACBD373AFC5002F8A7B650CB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4E3C71647DDA0F553A285BEE387BC09 /* UIView+YJBannerViewExt.m in Sources */,
+				D09310045ED90061F9E94E78F79844F5 /* YJAbstractDotView.m in Sources */,
+				0D1FF6369ED54AE0E43F3AB54B1B3A7B /* YJAnimatedDotView.m in Sources */,
+				152118CAAEBEB0361EB3CC32F2F8C234 /* YJBannerView-dummy.m in Sources */,
+				AECA1BFF057E4D37E3932495DD768ECA /* YJBannerView.m in Sources */,
+				7BC9FEFDC776E2423A5B424C79FA254F /* YJBannerViewCell.m in Sources */,
+				CE0FFA0B7FF120BD468F3EEA025DF607 /* YJBannerViewCollectionView.m in Sources */,
+				BD751FB0B1234A432168CD329BBA5B88 /* YJBannerViewFooter.m in Sources */,
+				319B04FD551E8C7412CA070091BBA7DC /* YJHollowPageControl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3882F88DFD149411A8DBF00861DB03C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08B2C510F740F1A9C7D82830D340DAA6 /* Pods-AutoPackingDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52221836CC3CEE4B73B20EE5F52B25CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A3039F6749152DC3E72388D69237D14 /* ElegantTableView-dummy.m in Sources */,
+				2E3F2243507086772441A566655CC75C /* ElegantTableViewGenerator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		684AF897F30237DB480E55ED22516C7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YJBannerView;
+			target = E8672246CDAA1A7D561CE6ACA2CD18D2 /* YJBannerView */;
+			targetProxy = 982F95104F6B3D84188413DE3F11D028 /* PBXContainerItemProxy */;
+		};
+		8E820D90A54024CA64A85E62CEE8DE2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ElegantTableView;
+			target = 09683AFE1FA5F23104EA5299A795EA49 /* ElegantTableView */;
+			targetProxy = 79D4938E9B4B59F65AE38050FAF662C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		007F1066051A467FBEB0038594E9D7C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		10268B8869673B189F96B9051459EB00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC032C89AED44FFA2CAB4D894EC96183 /* ElegantTableView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/ElegantTableView/ElegantTableView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ElegantTableView;
+				PRODUCT_NAME = ElegantTableView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B17A91B56DDB6D23254FB5AAC9FBD9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC032C89AED44FFA2CAB4D894EC96183 /* ElegantTableView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/ElegantTableView/ElegantTableView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ElegantTableView;
+				PRODUCT_NAME = ElegantTableView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		309044AF29C03305F0C7A30658D651C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96D02AE6A1D4FA991CABDDFCD319730B /* Pods-AutoPackingDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F9416EB2647EC8F313FC3043F3BCD24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61F7B8E857CCE610FAD9485EE3F5038A /* Pods-AutoPackingDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C052BD72BB22871C22FE44E47606F787 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C3A0228A8CB237591ABCC019D416865 /* YJBannerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/YJBannerView/YJBannerView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = YJBannerView;
+				PRODUCT_NAME = YJBannerView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E246FC26AF4A9832D7AA01080188D618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EA2D85A2D9696FD71CAEB02591096C3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C3A0228A8CB237591ABCC019D416865 /* YJBannerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/YJBannerView/YJBannerView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = YJBannerView;
+				PRODUCT_NAME = YJBannerView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E246FC26AF4A9832D7AA01080188D618 /* Debug */,
+				007F1066051A467FBEB0038594E9D7C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5D1B90DE029522F17D0082D8B1C0054 /* Build configuration list for PBXNativeTarget "YJBannerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA2D85A2D9696FD71CAEB02591096C3A /* Debug */,
+				C052BD72BB22871C22FE44E47606F787 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B772969A21BC585347F0ED84EFDB1605 /* Build configuration list for PBXNativeTarget "ElegantTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B17A91B56DDB6D23254FB5AAC9FBD9A /* Debug */,
+				10268B8869673B189F96B9051459EB00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1530D466D9F267EEB20224EA2F01D4E /* Build configuration list for PBXNativeTarget "Pods-AutoPackingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				309044AF29C03305F0C7A30658D651C6 /* Debug */,
+				9F9416EB2647EC8F313FC3043F3BCD24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

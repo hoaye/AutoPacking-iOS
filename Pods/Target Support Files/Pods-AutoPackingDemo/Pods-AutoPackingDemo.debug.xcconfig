@@ -1,0 +1,10 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Bugly"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Bugly" "${PODS_ROOT}/Headers/Public/ElegantTableView" "${PODS_ROOT}/Headers/Public/YJBannerView"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ElegantTableView" "${PODS_CONFIGURATION_BUILD_DIR}/YJBannerView"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Bugly" -isystem "${PODS_ROOT}/Headers/Public/ElegantTableView" -isystem "${PODS_ROOT}/Headers/Public/YJBannerView"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"ElegantTableView" -l"YJBannerView" -l"c++" -l"z" -framework "Bugly" -framework "Security" -framework "SystemConfiguration"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
