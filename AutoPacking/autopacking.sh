@@ -82,6 +82,7 @@ READ_USER_INPUT "请选择对应的Target: " "${__SELECT_TARGET_OPTIONS[*]}" ${#
 __SELECT_TARGET_OPTION=$?
 if [[ $__SELECT_TARGET_OPTION -eq 1 ]]; then
   __BUILD_TARGET="AutoPackingDemo"
+  __SCHEME_NAME="AutoPackingDemo"
 else
   printMessage "这里请填写好你工程的所有target, 如果只有一个建议写死如下"
   # __BUILD_TARGET="AutoPackingDemo"
@@ -194,9 +195,8 @@ function print_packing_message() {
   printMessage "当前Info.plist路径 = ${__CURRENT_INFO_PLIST_PATH}"
 }
 
-# 修改编辑版本
-#__SET_BUNDLE_BUILD_VERSION="${__BUNDLE_BUILD_VERSION}.${__CURRENT_DATE}"
-#/usr/libexec/PlistBuddy -c "Set :CFBundleVersion ${__SET_BUNDLE_BUILD_VERSION}" "${__CURRENT_INFO_PLIST_PATH}"
+print_packing_message
+
 if [[ $__IS_WORKSPACE_OPTION -eq 1 ]]; then
   # pod install --verbose --no-repo-update
 
@@ -280,7 +280,7 @@ printMessage "开始导出ipa文件"
 xcodebuild -exportArchive -archivePath ${__EXPORT_ARCHIVE_PATH} \
 -exportPath ${__EXPORT_IPA_PATH} \
 -destination generic/platform=ios \
--exportOptionsPlist ${ExportOptionsPlistPath} \
+-exportOptionsPlist ${__EXPORT_OPTIONS_PLIST_PATH} \
 -allowProvisioningUpdates
 
 # 修改ipa文件名称

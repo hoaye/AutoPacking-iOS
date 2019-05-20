@@ -1,20 +1,20 @@
 # 一、背景
 
-在实际开发中，需要不停的打各种包，开发人员忙于新需求实现，打包时重复而且没有意义的事情。于是造了这个轮子，配置好参数一键上传到内测网站(蒲公英、Fir等)或者APPStore。
+在实际多业务迭代开发中，持续打包是必须的工作，自动化实现是必须实现的功能，编辑脚本实现自动化打包上传指定位置。
 
 ##  1.1、知识储备
 
-使用本脚本的亲们，需要了解打包命令的基本知识，对于打包命令一点不懂的补一下知识再尝试吧，最近好多小伙伴问我报错为什么，一看什么都没有配置就执行，我乐意为大家解决报错问题，私信我的时候请先补充一下相关知识，谢谢。
+需要了解打包命令 xcodebuild 的基本知识
 
 # 二、预览效果图
 
 ## 2.1 执行脚本 和 选项配置
 
-![](https://ws3.sinaimg.cn/large/006tNbRwly1fkfjub1e73j30g60jmmzh.jpg)
+![](http://ww2.sinaimg.cn/large/006tNc79ly1g37m4a2iy9j30k20u2gor.jpg)
 
 ## 2.2 开始构建
 
-![](https://ws4.sinaimg.cn/large/006tNbRwly1fkfjve1ztcj30kx0fr0u9.jpg)
+![](http://ww3.sinaimg.cn/large/006tNc79ly1g37m57lw1fj310e08ggn1.jpg)
 
 ## 2.3 构建成功并开始导出ipa
 
@@ -26,7 +26,7 @@
 
 # 二、脚本环境
 
-基于 Xcode 9 设计，注意Xcode 8和9有所区别，请参考我的另一篇：[http://www.jianshu.com/p/ba179c731e3f](http://www.jianshu.com/p/ba179c731e3f) ,
+基于 Xcode 10 设计，注意Xcode 8和9有所区别，请参考我的另一篇：[http://www.jianshu.com/p/ba179c731e3f](http://www.jianshu.com/p/ba179c731e3f) ,
 如有问题，欢迎指正。
 
 # 三、功能
@@ -62,7 +62,13 @@ xcodebuild -exportArchive	// 等同于点击 export
 
 可以仿照Demo调整
 
-测试体验Demo的话，需要更换的地方：1. 你的Bundle identifier 2.还有Plist里面的相应plist文件，3、上传蒲公英或者Fir的相关APPID和Key，4.(可选) 如果是多个证书的话，需要指定证书，并打开下面的注释
+### 测试体验Demo的话，
+
+需要更换的地方：
+- 1. 你的Bundle identifier 
+- 2.还有Plist里面的相应plist文件
+- 3、上传蒲公英或者Fir的相关APPID和Key，
+- 4.(可选) 如果是多个证书的话，需要指定证书，并打开下面的注释
 
 # 六、注意事项
 
@@ -103,3 +109,13 @@ xcodebuild -exportArchive	// 等同于点击 export
 直接复制到指定路径或者手动copy即可。
 
 ---
+
+# FAQ
+
+## 1.脚本支持多个target打包吗？
+答：支持的，将您的所有target 写在 `__SELECT_TARGET_OPTIONS=("1.AutoPackingDemo")` 这个集合里面，比如：``__SELECT_TARGET_OPTIONS=("1.Tatget1" "2.Target2" "3.Target3")`, 同时修改下面的if else 判断。还有就是如果您是多个Target 对应多个Info.plist，请自行处理对应关系. so easy~
+
+## 2. 编译报错，报 Print: Entry, "CFBundleVersion", Does Not Exist 类似错误怎么解决？
+答：报这样的错误多半是Info.plist对应的路径不对 或者 Info.plist名称被修改，脚本 `__CURRENT_INFO_PLIST_NAME="Info.plist"` 处Info.plist 名称和你项目里的相对路径要对。如果是多个Targget对应多个Info.plist，请自行处理对应关系。
+
+
