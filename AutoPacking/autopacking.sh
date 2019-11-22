@@ -41,6 +41,10 @@ __LINE_BREAK_RIGHT="\033[0m"
 __ERROR_MESSAGE_LEFT="\033[41m ! ! ! "
 __ERROR_MESSAGE_RIGHT=" ! ! ! \033[0m"
 
+# xcode version
+XCODE_BUILD_VERSION=$(xcodebuild -version)
+echo "-------------- Xcode版本: $XCODE_BUILD_VERSION -------------------"
+
 # 等待用户输入时间
 __WAIT_ELECT_TIME=0.2
 
@@ -167,6 +171,24 @@ __CURRENT_INFO_PLIST_PATH="${__PROJECT_NAME}/${__CURRENT_INFO_PLIST_NAME}"
 __BUNDLE_VERSION=`/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" ${__CURRENT_INFO_PLIST_PATH}`
 # 获取编译版本号
 __BUNDLE_BUILD_VERSION=`/usr/libexec/PlistBuddy -c "Print CFBundleVersion" ${__CURRENT_INFO_PLIST_PATH}`
+
+# Xcode11 以上版本
+if [[ $XCODE_BUILD_VERSION =~ "Xcode 11" || $XCODE_BUILD_VERSION =~ "Xcode11" ]]; then
+  __BUNDLE_VERSION_TAG="MARKETING_VERSION"
+  __BUNDLE_BUILD_VERSION_TAG="CURRENT_PROJECT_VERSION"
+  __PROJECT_ROOT_PATH=`find . -name *.xcodeproj`
+  __PBXPROJ_PATH="$__PROJECT_ROOT_PATH/project.pbxproj"
+  __BUNDLE_VERSION_11=$(grep "${__BUNDLE_VERSION_TAG}" $__PBXPROJ_PATH | head -1 | awk -F '=' '{print $2}' | awk -F ';' '{print $1}' | sed s/[[:space:]]//g)
+  __BUNDLE_BUILD_VERSION_11=$(grep "${__BUNDLE_BUILD_VERSION_TAG}" $__PBXPROJ_PATH | head -1 | awk -F '=' '{print $2}' | awk -F ';' '{print $1}' | sed s/[[:space:]]//g)
+
+  if [[ -n "$__BUNDLE_VERSION_11" ]]; then
+    __BUNDLE_VERSION="$__BUNDLE_VERSION_11";
+  fi
+
+  if [[ -n "$__BUNDLE_BUILD_VERSION_11" ]]; then
+    __BUNDLE_BUILD_VERSION="$__BUNDLE_BUILD_VERSION_11";
+  fi
+fi
 
 # 编译生成文件目录
 __EXPORT_PATH="./build"
