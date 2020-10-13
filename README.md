@@ -16,17 +16,13 @@
 
 ![](http://ww3.sinaimg.cn/large/006tNc79ly1g37m57lw1fj310e08ggn1.jpg)
 
-## 2.3 构建成功并开始导出ipa
+## 2.3 构建成功并开始导出ipa 并上传到指定位置
 
-![](https://ws2.sinaimg.cn/large/006tNbRwly1fkfjwg2ey7j30dd044zk9.jpg)
-
-## 2.4 导出ipa成功并上传到内测网站
-
-![](https://ws1.sinaimg.cn/large/006tNbRwly1fkfjximvk6j30le0750u0.jpg)
+![](https://tva1.sinaimg.cn/large/007S8ZIlly1gjnwwbwdtlj30r105t3zk.jpg)
 
 # 二、脚本环境
 
-基于 Xcode 10 设计，注意Xcode 8和9有所区别，请参考我的另一篇：[http://www.jianshu.com/p/ba179c731e3f](http://www.jianshu.com/p/ba179c731e3f) ,
+基于 Xcode 10+ 设计，注意Xcode 8和9有所区别，请参考作者的另一篇：[http://www.jianshu.com/p/ba179c731e3f](http://www.jianshu.com/p/ba179c731e3f) ,
 如有问题，欢迎指正。
 
 # 三、功能
@@ -65,6 +61,7 @@ xcodebuild -exportArchive	// 等同于点击 export
 ### 测试体验Demo的话，
 
 需要更换的地方：
+
 - 1. 你的Bundle identifier 
 - 2.还有Plist里面的相应plist文件
 - 3、上传蒲公英或者Fir的相关APPID和Key，
@@ -102,9 +99,9 @@ xcodebuild -exportArchive	// 等同于点击 export
 </plist>
 ```
 
-如果不知道怎么填写，手动用Xcode9打包，导出文件中会有ExportOptions.plist
+如果不知道怎么填写，手动用**Xcode**打包，导出文件中会有ExportOptions.plist
 
-![](https://ws3.sinaimg.cn/large/006tKfTcly1fke46g4ppwj305f02maa1.jpg)
+![](https://tva1.sinaimg.cn/large/007S8ZIlly1gjnx0of0olj30yc0cgjtz.jpg)
 
 直接复制到指定路径或者手动copy即可。
 
